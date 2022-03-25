@@ -14,5 +14,3 @@ close.addEventListener("click", () => {
   document.querySelector(".modal").classList.remove("modal-active");
   document.querySelector(".overlay").classList.remove("overlay-active");
 });
-
-
