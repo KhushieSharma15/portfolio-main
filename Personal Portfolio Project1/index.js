@@ -15,3 +15,4 @@ close.addEventListener("click", () => {
   document.querySelector(".overlay").classList.remove("overlay-active");
 });
 
+
