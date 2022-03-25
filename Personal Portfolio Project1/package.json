@@ -1,0 +1,26 @@
+{
+  "name": "portpro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khushisharmacanada123/portfolio.git#main"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "khushisharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khushisharmacanada123/portfolio/issues"
+  },
+  "homepage": "https://github.com/khushisharmacanada123/portfolio/tree/main#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  }
+}

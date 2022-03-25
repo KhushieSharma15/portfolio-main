@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.min.css" />
+    <title>Restaurant Website</title>
+  </head>
+  <body>
+    <div class="main-content">
+    <div>
+      <nav>
+        <div class="dark-mode-container">
+          <button class="dark-mode-btn">Dark Mode</button>
+        </div>
+        <ul class="nav-flex-row">
+          <li class="nav-item">
+            <a href="./about.html" target="_blank"> About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#reservation" id="Reservation">Reservation</a>
+          </li>
+          <li class="nav-item">
+            <a href="#menu" id="menu">Menu</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a href="#shop">Shop</a>
+          </li> -->
+          <li class="nav-item">
+            <a href="./blog.html" target="_blank">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="./contact.html" target="_blank">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <section class="section-intro">
+      <header>
+        <h1>Foodyy</h1>
+      </header>
+      <div class="link-to-book-wrapper">
+        <div class="booking">
+          <a class="link-to-book" href="#reservations">Book a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <article>
+        <h3>Section for text why is your restaurant best.</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
+          quae nobis vero id quam officiis beatae accusantium in odit at
+          recusandae possimus provident ipsum? A nam laudantium asperiores sunt
+          earum ullam error placeat ea dolor. Alias cumque officia nemo optio,
+          minima, qui distinctio, nisi non maiores nostrum ad velit! Ullam?
+        </p>
+      </article>
+    </section>
+
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+    <div class="carousel-container">
+      <div class="carousel-inner">
+        <!-- <div class="carousel-item active"> -->
+        <!-- </div> -->
+        <!-- <div class="carousel-item"> -->
+        <!-- </div> -->
+        <!-- <div class="carousel-item"> -->
+        <!-- </div> -->
+        <img src="images/brooke-lark.jfif" class="carousel-item" alt="Brooke-lark" id="lastClone" />
+        <img src="images/food.jfif" class="carousel-item" alt="Tasty food" />
+        <img src="images/lily-banse.jfif" class="carousel-item" alt="Lily-banse" /> 
+        <img src="images/brooke-lark.jfif" class="carousel-item" alt="Brooke-lark" />
+        <img src="images/food.jfif" class="carousel-item" alt="Tasty food" id="firstClone" />
+
+
+      </div>
+    </div>
+    <div class="carousel-btn">
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    </div>
+
+    <div class="container">
+      <div class="row-flex">
+        <div class="flex-column-form">
+          <h3>Make a booking</h3>
+          <form class="form-group">
+            <div class="form-group">
+              <p>Please leave your number we will call to make a reservation</p>
+              <input
+                type="name"
+                class="form-control"
+                id="exampleInputName1"
+                aria-describedby="nameHelp"
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="number"
+                class="form-control"
+                id="exampleInputPhoneNumber1"
+                placeholder="Enter your phone number"
+              />
+            </div>
+            <button type="submit" class="btn bn-primary">Submit</button>
+          </form>
+        </div>
+
+        <div class="opening-time">
+          <h3>Opening times</h3>
+          <p>
+            <span>Monday-Thursday: 8:00-22:00</span>
+            <span>Friday-Saturday: 9:00-23:00</span>
+            <span>Sunday: 10:00-17:00</span>
+          </p>
+        </div>
+
+        <div class="contact-adress">
+          <h3>Contact</h3>
+          <p>
+            <span>000 928 ****</span>
+            <span>--street--</span>
+            <span>--address--</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="modal-title">Make Booking</div>
+        <button class="close-modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <input type="name" class="modal-input" placeholder="Enter your name" />
+
+        <input
+          type="number"
+          class="modal-input"
+          placeholder="Enter your phone number"
+        />
+        <button type="submit" class="modal-btn">Submit</button>
+      </div>
+    </div>
+
+    <div class="menu-modal modal-active" id="menu-modal">
+      <div class="menu-modal-header">
+        <div class="modal-title">Menu</div>
+        <button class="menu-close-modal">&times;</button>
+      </div>
+      <div class="menu-modal-body">
+       <ul class="menu-list">
+         <li>Lorem, ipsum.</li>
+         <li>Lorem, ipsum.</li>
+         <li>Lorem, ipsum.</li>
+         <li>Lorem, ipsum.</li>
+         <li>Lorem, ipsum.</li>
+       </ul>
+      </div>
+    </div>
+    <div id="overlay" class="overlay"></div>
+  </div>
+    <script src="main.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/style.min.css" />
+  <title>About Us</title>
+</head>
+
+<body class="main-content">
+  <div>
+    <div class="main-content">
+      <div class="dark-mode-container">
+        <button class="dark-mode-btn">Dark Mode</button>
+      </div>
+      <h1 class="about">ABOUT ME</h1>
+      <div class="about-section-page">
+        <div class="section-title">KHUSHI SHARMA</div>
+        <div class="section-content">
+          I would like to introduce myself. I am twenty years old. I was born in the small town of Faridkot in the Indian state of Punjab. My childhood was spent there. My parents and two siblings are part of a loving, caring and supportive family of five. We take pleasure in every aspect of our lives. My parents have worked extremely hard to ensure that we receive an excellent education and a secure future. My maternal grandmother is a very cool and understanding woman. She is always there for me and inspires me to achieve my goals. 
+          I have a wonderful family who stand by me through thick and thin. In terms of my studies, I completed grade 12 in my hometown school with mathematics and was eager to study abroad for my higher education. I ended up at Manitoba Institute of Trades and Technology(MITT) in Winnipeg, Canada after researching the ideal country and institute for my ambitions to come true.
+          My decision to pursue software development education comes through my fascination with computers and technology which could keep me occupied in visually striking games and programmes. As a teenager, I was curious how programming languages could be utilized to generate such diverse programs. I have been interested in learning the core programming skills. I enjoy technology because it offers so many different options that there is never a dull moment. Every now and then, we see new mobiles phones, smart watches and software that assists to develop technology in the most efficient way possible. It includes continuous learning and staying up to date at all times.
+          I am passionate about software, computers and technology. It is a technologically growing world so I want to create software and applications that can change the way people live and contribute to making their lives easier. This prompted me to continue my career in this field.  
+        </div>
+      </div>
+    </div>
+    <script>
+      const darkMode = document.querySelector('.dark-mode-btn');
+      darkMode.addEventListener('click', () => {
+        document.querySelector('.main-content').classList;
+        if (document.querySelector('.main-content').classList.length == 1) {
+          document.querySelector('.main-content').classList.add('dark-mode');
+          document.querySelector('.dark-mode-btn').innerHTML = "Normal Mode";
+          document.querySelector('.blog').classList.add('dark-mode-blog');
+        }
+        else {
+          document.querySelector('.main-content').classList.remove('dark-mode');
+          document.querySelector('.dark-mode-btn').innerHTML = "Dark Mode";
+          document.querySelector('.blog').classList.remove('dark-mode-blog');
+        }
+
+
+      });
+    </script>
+</body>
+
+</html>
